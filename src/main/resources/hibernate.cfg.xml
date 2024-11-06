@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Version 8 MySQL hiberante-cfg.xml example for Hibernate 5 -->
+<hibernate-configuration>
+  <session-factory>
+  
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+  <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+  
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/hibernatedb</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">Syed@1996</property>
+  <property name="hibernate.show_sql">true</property>
+   <property name="hbm2ddl.auto">update</property>
+  
+  
+  
+  
+<!--    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+     property name="connection.driver_class">com.mysql.jdbc.Driver</property 
+    <property name="connection.url">jdbc:mysql://localhost:3307/hibernatedb</property>
+    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">Syed@1996</property>
+      <property name="connection.password">Syed@1996</property>
+    -->
+    
+    
+    
+    <!-- list of xml mapping files-->
+    <mapping class = "Com.shahrukh.hibernate.FirstProject.Employee"/>
+  </session-factory>
+</hibernate-configuration>
+
+<!--
+This XML file is a Hibernate configuration file (hibernate.cfg.xml), 
+which is used to configure the connection between Hibernate and the database. 
+It specifies the database connection details, Hibernate settings, and references to mapping files for entity classes.-->

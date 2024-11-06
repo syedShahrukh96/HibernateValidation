@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-5.3.dtd">
+<hibernate-mapping>
+  <class name="Com.shahrukh.hibernate.FirstProject.Employee" table="h1_employee">
+    <id name="empId" column="EMPID">
+      <generator class="assigned" />
+    </id>
+    <property name="empName" column="NAME" />
+    <property name="department" column="DEPARTMENT" />
+    <property name="designation" column="DESIGNATION" />
+  </class> 
+</hibernate-mapping>
+
+
+<!--
+This XML file is a Hibernate mapping file that defines the mapping between a Java class (Employee) and a database table (h1_employee). 
+In Hibernate, such XML files are used to specify how the properties of a Java class correspond to the columns of a database table.
+-->
